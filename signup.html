@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FoodForLife HomePage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="CSS/home.css">
+    <link type="text/css" rel="stylesheet" href="CSS/signup.css">
+
+  <script>
+
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</head>
+
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="home2.html" class="active">Home</a>
+      <a href="Menu2.html">Menu</a>
+      <a href="special2.html">Specials</a>
+      <a href="giftcard.html">GiftCards</a>
+          <a href="signup.html">SignUp</a>
+          <a href="gallery.html">Gallery</a>
+                <a href="aboutus.html">AboutUs</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+  <div id="contactForm" class="contactForm">
+  	<div id="formHeader" class="formHeader">
+  		<h1 id="message">Contact Us</h1>
+  	</div>
+  	<div id="formBody" class="formBody">
+  		<form action="" method="POST" name="contactForm">
+  			<div class="inputContainer">
+  				<label for="userName">
+  					<i class="fa fa-lg fa-fw fa-user"></i>
+  				</label>
+  				<input name="name" id="userName" type="text" placeholder="John Smith">
+  			</div>
+  			<div class="inputContainer">
+  				<label for="userEmail">
+  					<i class="fa fa-lg fa-fw fa-envelope"></i>
+  				</label>
+  				<input name="email" id="userEmail" type="email" placeholder="jsmith@domain.com">
+  			</div>
+  			<div class="inputContainer">
+  				<textarea name="feedback" id="userMessage" rows="10" placeholder="Enter your message"></textarea>
+  			</div>
+  			<input id="submitBtn" class="submitBtn" type="submit" value="Send">
+  		</form>
+  	</div>
+  </div>
+
+  <script type="text/javascript" src="js/signup.js">
+
+
+  </script>
+
+
+  </main>
+
+  <footer>
+    <div class="footerFlex">
+
+      <div class="footercompany">
+        <h4>Food For Life</h4>
+      </div>
+
+      <div class="menuitems">
+        <ul id="footertags">
+          <li><a href="#">PrivacyPolicy</a></li>
+          <li><a href="#">ContactUs</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+        <p id="copyright">Copyright &copy; 2019, Inc. All Rights Reserved</p>
+      </div>
+
+      <div class="socialmedia2">
+        <section class="socialmedia">
+          <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook" width="35px" height="35px"></a>
+          <a href="https://www.instagram.com/"> <img src="images/instagram (1).png" alt="instagram" width="35px" height="35px"></a>
+          <a href="https://twitter.com/"> <img src="images/twitter.png" alt="twitter" width="35px" height="35px"></a>
+        </section>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </footer>
+
+
+
+</body>
+
+</html>

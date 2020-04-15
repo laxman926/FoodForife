@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 100%;
+  height: 10%;
+  border: 1px solid white;
+  position: relative;
+  margin: 0px;
+  font-style: italic;
+}
+
+.centered {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+}
+
+#giftcard {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*#buttonhead{
+    letter-spacing: 3px;
+    color: white;
+    border-radius: 2px;
+    background-color: #a21f2a;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 40px 15px 40px;
+    font-family: monospace;
+    cursor: pointer;
+    text-align: center;
+
+}*/
+#buttonhead:hover {
+  background-color: red;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  height: 10%;
+  border: 1px solid white;
+  margin: 0px;
+}
+
+.cards {
+  padding: 20px;
+  margin: 0px;
+  flex: 33.3%;
+}
+
+.cards img {
+  border-radius: 10px;
+}
+
+#buttontype {
+  letter-spacing: 3px;
+  border-radius: 2px;
+  background-color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid red;
+  padding: 15px 40px 15px 40px;
+  font-family: monospace;
+  cursor: pointer;
+}
+
+#buttontype:hover {
+  background-color: #a21f2a;
+}
+
+p {
+  text-align: center;
+  font-family: sans-serif;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+#column {
+  width: 90%;
+  border: 1px solid white;
+  background-color: #b61e34;
+  margin: auto;
+  color: white;
+}
+
+h1 {
+  text-align: center;
+  font-family: monospace;
+  letter-spacing: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+#formcolumn {
+  width: 60%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin: 0;
+  box-sizing: border-box;
+  border: 1px solid #555;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#buttoncolumn {
+  letter-spacing: 3px;
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  width: 60%;
+  height: 20p%;
+  font-family: monospace;
+  cursor: pointer;
+  margin-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+form {
+  text-align: center;
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: black;
+  color: whitesmoke;
+}
+
+@media only screen and (max-width: 1024px) {
+  #container {
+    width: 100%;
+  }
+
+  #giftcard {
+    width: 100%;
+  }
+
+  .images {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #imageresp {
+    width: 100%;
+    height: auto;
+  }
+
+  #buttonhead {}
+
+  .centered {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10px;
+    width: 100%;
+    padding: 10px;
+  }
+
+  #column {
+    width: 80%;
+    border: 1px solid white;
+    background-color: #b61e34;
+    margin: auto;
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  #buttoncolumn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  #formcolumn {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #giftcard {
+    margin: 0;
+    padding: 0;
+  }
+
+  .images {
+    display: flex;
+    flex-direction: column;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FoodForLife MenuPage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link type="text/css" rel="stylesheet" href="CSS/home.css">
+  <link type="text/css" rel="stylesheet" href="CSS/Menu.css">
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+
+    <div class="topnav" id="myTopnav">
+      <a href="home2.html" class="active">Home</a>
+      <a href="Menu2.html">Menu</a>
+      <a href="special2.html">Specials</a>
+      <a href="giftcard.html">GiftCards</a>
+      <a href="signup.html">SignUp</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="aboutus.html">AboutUs</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <main>
+
+
+    <div class="hero-image" id="headimage">
+      <img src="images/menu2.jpg" alt="menuimg" width="100%" height="550px;">
+      <div class="hero-text">
+
+        <h1>Food For Life </h1>
+        <h5>Select From Our Menu</h5>
+        <br />
+
+        <ul id="selectmenu">
+          <li><a href="#indian">Indian Cusine</a></li>
+          <li><a href="#chinese">Chinese</a></li>
+          <li><a href="#italian">Italian</a></li>
+          <li><a href="#drinks">Drinks</a></li>
+        </ul>
+
+      </div>
+    </div>
+    <div class="">
+
+    </div>
+
+    <div id="indian">
+      <h4 class="foodCategory">Indian Cusine<sub><a id="nutritioninfo" href="nutritioninfo.html">Nutrition Information</a></sub> </h4>
+
+      <div class="foodItem">
+        <h4>ALOO TIKKI (TWO PIECES)</h4>
+        <p>Fried potato cakes served with curried chick peas.</p>
+        <h5>$8.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>SAMOSA TWO PIECES (VEGETABLE)</h4>
+        <p>light flaky pastry envelope stuffed with either your choice of seasoned minced beef or potatoes and green peas.</p>
+        <h5>$15.00</h5>
+      </div>
+      <div class="foodItem">
+        <h4>TANDOORI CHICKEN</h4>
+        <p>quarter chicken (leg), marinted in yogurt and an array of spices cooked to perfection in our tandoor.</p>
+        <h5>$10.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>SEEKH KEBAB (TWO PIECES)</h4>
+        <p>minced beef highly seasoned with our special blend of herbs and spices, then roasted on skewers in our tandoor.</p>
+        <h5>$9.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>ASSORTED TANDOORI PLATTER</h4>
+        <p>an assortment of chicken tikka, reshmi tikka, seekh kebab and fish tikkka.</p>
+        <h5>$12</h5>
+      </div>
+      <div class="foodItem">
+        <h4>BUTTER CHICKEN</h4>
+        <p>tender pieces of tandoori chicken simmared in a velvety tomato cream sauce</p>
+        <h5>$14.99</h5>
+      </div>
+    </div>
+
+    <div id="chinese">
+      <h4 class="foodCategory">Chinese Menu<sub><a id="nutritioninfo" href="nutritioninfo.html">Nutrition Information</a></sub></h4>
+      <div class="foodItem">
+        <h4>CHOW HOI SHIN</h4>
+        <p>Jumbo shrimp, scallops & lobster stir-fried with vegetables.</p>
+        <h5>$12.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>BEEF TENDERLOIN</h4>
+        <p>Tenderloin beef stir-fried with vegetables and cooked
+          in oyster sauce</p>
+        <h5>$14.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>BUTTERFLY SHRIMP</h4>
+        <p>Jumbo shrimp fried with bacon & eggs, served on a
+          bed of fried rice with our special sauce</p>
+        <h5>$9.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4> RAINBOW PORK</h4>
+        <p>Battered pork stir-fried with green pepper, onions
+          and pineapple in our sweet & sour sauce</p>
+        <h5>$8.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4> CHICKEN ROLL</h4>
+        <p>Shrimp & B.B.Q pork wrapped in chicken and deepfried
+          in egg batter, served on a bed of vegetables</p>
+        <h5>$10.00</h5>
+      </div>
+      <div class="foodItem">
+        <h4> BEEF TENDERLOIN.</h4>
+        <p>Tenderloin beef stir-fried with vegetables and cooked
+          in oyster sauce.</p>
+        <h5>$12.99</h5>
+
+
+
+
+      </div>
+    </div>
+
+
+    <div id="italian">
+      <h4 class="foodCategory">Italian Menu<sub><a id="nutritioninfo" href="nutritioninfo.html">Nutrition Information</a></sub></h4>
+      <div class="foodItem">
+        <h4>MARINATED OLIVES</h4>
+        <p>Warm Cerignola & Gaeta olives with olive oil, rosemary, chilli & lemon</p>
+        <h5>$8.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>GENNARO'S CHICKEN CLUB</h4>
+        <p>Brioche bun stuffed with chargrilled marinated chicken thigh, crispy pancetta, spicy mayo, fontina cheese, tomato & peppery arugula</p>
+        <h5>$9.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>CHICKEN AL MATTONE</h4>
+        <p>Half a higher-welfare grilled chicken, served with peas, edamame beans, zucchini & basil pesto</p>
+        <h5>$14.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>PROSCIUTTO-WRAPPED COD</h4>
+        <p>Fresh cod wrapped in prosciutto di Parma, served with kale & bean stew</p>
+        <h5>$14.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>BAKED SALMON</h4>
+        <p>Sustainably-caught Canadian salmon with quinoa, kale & roasted seasonal vegetables</p>
+        <h5>$14.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>ITALIAN STEAK & FRIES</h4>
+        <p>Marinated flat iron steak, flash grilled & served with Italian-spiced skinny fries & salsa rosso crudo</p>
+        <h5>$11.99</h5>
+      </div>
+    </div>
+
+
+    <div id="drinks" class="drinks section">
+      <h4 class="foodCategory">Dessert & Drinks<sub><a id="nutritioninfo" href="nutritioninfo.html">Nutrition Information</a></sub></h4>
+      <div class="foodItem">
+        <h4>CADILLAC MARGARITA</h4>
+        <p>Our frozen lime margarita, Sauza Gold Tequila & Grand Marnier.</p>
+        <h5>$11.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>HAND-SHAKEN AVO SPICE MARGARITA</h4>
+        <p>Sauza Gold Tequila, Bols Triple Sec, lime & citrus juices, avocado, jalapeño, cilantro & smoked salt rim.</p>
+        <h5>$11.00</h5>
+      </div>
+      <div class="foodItem">
+        <h4>Chocolate Cake</h4>
+        <p>Served with a glass of cold milk</p>
+        <h5>$8.00</h5>
+      </div>
+
+      <div class="foodItem">
+        <h4>BEER</h4>
+        <p>Castle, Black Label, Amstel, Windhoek Light and Windhoek Lager</p>
+        <h5>$9.99</h5>
+      </div>
+      <div class="foodItem">
+        <h4>CHEESECAKE</h4>
+        <p>Dark chocolate, classic, and strawberry shortcake</p>
+        <h5>$12</h5>
+      </div>
+    </div>
+
+
+    <a href="#myTopnav">Top</a>
+  </main>
+
+
+  <footer>
+    <div class="footerFlex">
+
+      <div class="footercompany">
+        <h4>Food For Life</h4>
+      </div>
+
+      <div class="menuitems">
+        <ul id="footertags">
+          <li><a href="#">PrivacyPolicy</a></li>
+          <li><a href="#">ContactUs</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+        <p id="copyright">Copyright &copy; 2019, Inc. All Rights Reserved</p>
+      </div>
+
+      <div class="socialmedia2">
+        <section class="socialmedia">
+
+          <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook" width="35px" height="35px"></a>
+          <a href="https://www.instagram.com/"> <img src="images/instagram (1).png" alt="instagram" width="35px" height="35px"></a>
+          <a href="https://twitter.com/"> <img src="images/twitter.png" alt="twitter" width="35px" height="35px"></a>
+
+        </section>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </footer>
+
+
+
+</body>
+
+</html>

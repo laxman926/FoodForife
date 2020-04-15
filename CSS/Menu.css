@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+p {
+  text-align: justify;
+}
+
+body, html {
+  height: 100%;
+}
+
+.hero-image {
+  filter: brightness(100%);
+  position: relative;
+  text-align: center;
+}
+
+#selectmenu li a:hover {
+  color: #ff3d00;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 150%;
+}
+
+.foodCategory a {
+  float: right;
+  padding: 25px;
+  font-size: 25%;
+  text-decoration: none;
+  color: orange;
+}
+
+body {
+  background-color: #FFFFFF;
+}
+
+.header-site {
+  background-image: url(images/imageBasil.jpg);
+  background-position: 100%;
+  background-repeat: no-repeat;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+li a {
+  text-transform: uppercase;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+  text-decoration: underline;
+}
+
+.section {
+  padding: 25px 0;
+}
+
+.foodCategory {
+  text-align: center;
+  width: 100%;
+  font-family: 'Cookie';
+  font-size: 5em;
+  padding: 30px 0;
+}
+
+.foodItem {
+  float: left;
+  width: 100%;
+  padding: 10px 20px;
+}
+
+.foodItem h4 {
+  color: #E1103B;
+  font-family: 'Oswald';
+}
+
+.foodItem h5 {
+  margin-top: 10px;
+}
+
+@media (min-width:461px) {
+  .foodItem {
+    width: 50%;
+  }
+
+  .hero-text ul a {}
+}
+
+@media (min-width:961px) {
+  .foodItem {
+    width: 33.3333%;
+  }
+}

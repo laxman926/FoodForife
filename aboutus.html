@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FoodForLife HomePage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="CSS/home.css">
+  <link rel="stylesheet" href="CSS/aboutus.css">
+  <script type="text/javascript" src="js/home.js">
+
+
+  </script>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="home2.html" class="active">Home</a>
+      <a href="Menu2.html">Menu</a>
+      <a href="special2.html">Specials</a>
+      <a href="giftcard.html">GiftCards</a>
+      <a href="signup.html">SignUp</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="aboutus.html">AboutUs</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+
+    <h2>About Us</h2>
+    <p>With 20 years of serving great food, At Food for Life we fit your lifestyle and taste! Whenever you are looking for a hot nutritious breakfast, a quick lunch (or brunch), or delicious dinner, Food for Life welcomes you.</p>
+    <button class="accordion">Families Serving Families</button>
+    <div class="panel">
+      <p>At Food for Life Family Restaurant we cater to families as if they were our own. We serve healthy, hearty meals at reasonable prices.
+
+        Kitchener’s #1 Breakfast Spot
+        For 20 years, we’ve been Kitchener’s #1 Breakfast Spot. Open 7 days a week, our breakfast specials are available until 4pm.</p>
+    </div>
+
+    <button class="accordion">Great Dinner Specials</button>
+    <div class="panel">
+      <p>Enjoy great Souvlaki dinners, delicious pasta and super steaks!
+        Every night we serve half and full dinner specials for Senior Citizens, which includes soup or salad, garlic bread and dessert.
+
+        Kids Are Always Welcome!
+        Every day at Country boy is kids’ day! A complete meal for kids is always $5.</p>
+    </div>
+
+    <button class="accordion">Freshest Ingredients in Every Meal</button>
+    <div class="panel">
+      <p>When it comes to ingredients – we like to keep it real. We only serve the freshest ingredients, our breakfasts always include REAL eggs, REAL potatoes and REAL bacon.</p>
+    </div>
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          }
+        });
+      }
+    </script>
+    <a href="#myTopnav">Top</a>
+
+  </main>
+
+  <footer>
+    <div class="footerFlex">
+
+      <div class="footercompany">
+        <h4>Food For Life</h4>
+      </div>
+
+      <div class="menuitems">
+        <ul id="footertags">
+          <li><a href="#">PrivacyPolicy</a></li>
+          <li><a href="#">ContactUs</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+        <p id="copyright">Copyright &copy; 2019, Inc. All Rights Reserved</p>
+      </div>
+
+      <div class="socialmedia2">
+        <section class="socialmedia">
+          <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook" width="35px" height="35px"></a>
+          <a href="https://www.instagram.com/"> <img src="images/instagram (1).png" alt="instagram" width="35px" height="35px"></a>
+          <a href="https://twitter.com/"> <img src="images/twitter.png" alt="twitter" width="35px" height="35px"></a>
+        </section>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </footer>
+
+
+
+</body>
+
+</html>

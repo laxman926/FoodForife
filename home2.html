@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>FoodForLife HomePage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="CSS/home.css">
+  <script type="text/javascript" src="js/home.js">
+
+  </script>
+  <script>
+
+    function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</head>
+
+<body>
+  <nav>
+    <div class="topnav" id="myTopnav">
+      <a href="home2.html" class="active">Home</a>
+      <a href="Menu2.html">Menu</a>
+      <a href="special2.html">Specials</a>
+      <a href="giftcard.html">GiftCards</a>
+      <a href="signup.html">SignUp</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="aboutus.html">AboutUs</a>
+
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="slider">
+      <div class="w3-content w3-section">
+        <img class="mySlides" src="images/ss1.jpg">
+        <img class="mySlides" src="images/ss2.jpg">
+        <img class="mySlides" src="images/ss3.jpg">
+
+      </div>
+      <script>
+        var mineIndex = 0;
+  slides(); // call function
+  function slides() {
+    var i;
+    var a = document.getElementsByClassName("mySlides");
+    for (i = 0; i < a.length; i++) {
+      a[i].style.display = "none";
+    }
+    mineIndex++;
+    if (mineIndex > a.length) {
+      mineIndex = 1
+    }
+    a[mineIndex - 1].style.display = "block";
+    setTimeout(slides, 1700);
+  }
+</script>
+    </div>
+
+
+    <div class="menuImgBar">
+
+      <div class="menuimg">
+        <img src="images/m1.jpg" alt="" max-width="100%">
+        <section id="headmatter">
+
+          <h3>MENU</h3>
+          <p>Get a taste of the cottage without losing cell reception. No flipping a coin over who does the dishes.</p>
+          <button type="button" onclick="window.location.href='menu2.html'" id="menuBarBtn"><strong>DIVE IN </strong> </button>
+        </section>
+      </div>
+
+      <div class="menuimg">
+        <img src="images/f3.jpg" alt="" max-width="100%">
+        <section id="headmatter">
+          <h3>Specials</h3>
+          <p>See our weekly line up, promotions and special offers.</p>
+          <button type="button" onclick="window.location.href='special2.html'" id="menuBarBtn"><strong>EXPLORE </strong></button>
+        </section>
+      </div>
+
+      <div class="menuimg">
+        <img src="images/g4.jpg" alt="" max-width="100%">
+        <section id="headmatter">
+          <h3>GiftCards</h3>
+          <p>What better gift than quality time spent with family and friends over a home-cooked meal!</p>
+          <button type="button" onclick="window.location.href='giftcard.html'" id="menuBarBtn"> <strong>GRAB IT</strong> </button>
+        </section>
+      </div>
+
+    </div>
+    <div class="reserandrescipe">
+
+      <div class="reservation">
+        <img src="images/img2.jpg" alt="reservationtable" max-width="100%" height="auto">
+
+        <table id="headmatter">
+          <tr>
+
+            <td id="first"><select>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="5">6 People</option>
+                <option value="5">7 People</option>
+              </select></td>
+          </tr>
+          <tr>
+
+            <td><label for="tableres"></label><input type="date" name="tableres" max="2019-04-15"></td>
+          </tr>
+          <tr>
+
+            <td><label for="tableres"></label><input type="time" name="tableres"></td>
+          </tr>
+          <tr>
+
+            <td id="last"> <button id="reservationBtn" type="submit" name="recipe"><strong>Find a Table</strong> </button></td>
+          </tr>
+        </table>
+
+      </div>
+
+      <div class="recipe">
+        <img src="images/img1.jpg" alt="reservationtable" max-width="100%" height="auto">
+        <section id="headmatter">
+
+        </section>
+      </div>
+
+      <div class="recipe">
+        <img src="images/img3.jpg" alt="reservationtable" max-width="100%" height="auto">
+        <section id="headmatter">
+          <h3>Food for Life</h3>
+          <h2>Recipes</h2>
+          <p>Learn how we make some of our unique seasonal recipes inspired by cottage favourites</p>
+          <button id="recipebtn" type="button" name="recipe"> Recipe </button>
+        </section>
+      </div>
+
+
+    </div>
+
+
+    <a href="#myTopnav">Top</a>
+
+  </main>
+
+  <footer>
+    <div class="footerFlex">
+
+      <div class="footercompany">
+        <h4>Food For Life</h4>
+      </div>
+
+      <div class="menuitems">
+        <ul id="footertags">
+          <li><a href="#">PrivacyPolicy</a></li>
+          <li><a href="#">ContactUs</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+        <p id="copyright">Copyright &copy; 2019, Inc. All Rights Reserved</p>
+      </div>
+
+      <div class="socialmedia2">
+        <section class="socialmedia">
+          <a href="https://www.facebook.com/"> <img src="images/facebook.png" alt="facebook" width="35px" height="35px"></a>
+          <a href="https://www.instagram.com/"> <img src="images/instagram (1).png" alt="instagram" width="35px" height="35px"></a>
+          <a href="https://twitter.com/"> <img src="images/twitter.png" alt="twitter" width="35px" height="35px"></a>
+        </section>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+
+  </footer>
+
+
+
+</body>
+
+</html>
